@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import heroBackground from "@/assets/hero-background.jpg";
+import logo7limp from "@/assets/logo-7limp.png";
 
 const GOOGLE_REVIEW_URL = "https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review";
 
@@ -64,12 +65,7 @@ const Reviews = () => {
         {/* Logo */}
         <div className="text-center mb-8">
           <a href="/">
-            <span
-              className="text-5xl font-bold text-white tracking-tight drop-shadow-lg"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
-            >
-              O Seu Negócio
-            </span>
+            <img src={logo7limp} alt="7 Limp Cleaning" className="h-16 w-auto mx-auto drop-shadow-lg" />
           </a>
         </div>
 
@@ -237,7 +233,7 @@ const Reviews = () => {
 
         {/* Footer */}
         <p className="text-center text-white/30 text-xs mt-6">
-          © {new Date().getFullYear()} O Seu Negócio. Todos os direitos reservados.
+          © {new Date().getFullYear()} 7 Limp Cleaning. Todos os direitos reservados.
         </p>
       </motion.div>
     </div>

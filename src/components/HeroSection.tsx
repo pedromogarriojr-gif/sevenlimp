@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle, Phone, Star, ArrowRight, Wrench, Loader2 } from "lucide-react";
+import { CheckCircle, Phone, Star, ArrowRight, Sparkles, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useTranslation } from "react-i18next";
@@ -131,7 +131,7 @@ const HeroSection = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               {[
-                { text: t("hero.benefit1"), icon: Wrench },
+                { text: t("hero.benefit1"), icon: Sparkles },
                 { text: t("hero.benefit2"), icon: CheckCircle },
                 { text: t("hero.benefit3"), icon: CheckCircle },
               ].map((item, i) => (
