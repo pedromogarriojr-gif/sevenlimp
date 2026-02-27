@@ -118,24 +118,24 @@
     "description": "A opinião dos nossos clientes é o nosso maior orgulho e motivação.",
     "reviews": "reviews",
     "client1": {
-      "name": "Sofia Mendes",
-      "location": "Almada",
-      "text": "O meu sofá estava com manchas terríveis e eles deixaram-no como novo! Profissionais, pontuais e simpáticos. Super recomendo a 7 Limp!"
+      "name": "Grace C145",
+      "location": "Google Review",
+      "text": "What a wonderful service this lovely couple offer. We needed 3 large cream rugs and a cream sofa cleaned and the difference before and after was amazing!"
     },
     "client2": {
-      "name": "Ricardo Almeida",
-      "location": "Seixal",
-      "text": "Fizeram a limpeza dos colchões e tapetes de toda a casa. A diferença é incrível, especialmente para quem tem alergias como eu. Cinco estrelas!"
+      "name": "Max Curtis",
+      "location": "Google Review",
+      "text": "We inherited a lovely sofa, but in very bad cosmetic condition at our rental place. These guys are amazing and the sofa is looking brand new!"
     },
     "client3": {
-      "name": "Ana Ferreira",
-      "location": "Barreiro",
-      "text": "Mandei limpar os bancos do carro que estavam muito sujos com manchas dos miúdos. Ficaram impecáveis! Preço justo e serviço excelente."
+      "name": "Katarína Kondelová",
+      "location": "Google Review",
+      "text": "Excellent service and great communication :) Immediately after contacting them they came to pick up our rug and brought it beautifully cleaned after a couple of days. Very satisfied :)"
     },
     "client4": {
-      "name": "Miguel Santos",
-      "location": "Setúbal",
-      "text": "Já é a segunda vez que chamo a 7 Limp para limpar os sofás e colchões. Trabalho impecável e muito profissional. São os melhores da Margem Sul!"
+      "name": "Carmen Lourenco",
+      "location": "Google Review",
+      "text": "Excelente serviço! Sempre muito simpáticos. Já é a segunda vez que contrato esta empresa, primeira vez para limpeza do sofá e agora para limpeza de um colchão."
     }
   },
   "areas": {

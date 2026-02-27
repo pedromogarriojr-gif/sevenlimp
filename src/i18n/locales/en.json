@@ -118,24 +118,24 @@
     "description": "Our clients' opinions are our greatest pride and motivation.",
     "reviews": "reviews",
     "client1": {
-      "name": "Sofia Mendes",
-      "location": "Almada",
-      "text": "My sofa had terrible stains and they made it look brand new! Professional, punctual and friendly. Highly recommend 7 Limp!"
+      "name": "Grace C145",
+      "location": "Google Review",
+      "text": "What a wonderful service this lovely couple offer. We needed 3 large cream rugs and a cream sofa cleaned and the difference before and after was amazing!"
     },
     "client2": {
-      "name": "Ricardo Almeida",
-      "location": "Seixal",
-      "text": "They cleaned all the mattresses and carpets in my house. The difference is incredible, especially for allergy sufferers like me. Five stars!"
+      "name": "Max Curtis",
+      "location": "Google Review",
+      "text": "We inherited a lovely sofa, but in very bad cosmetic condition at our rental place. These guys are amazing and the sofa is looking brand new!"
     },
     "client3": {
-      "name": "Ana Ferreira",
-      "location": "Barreiro",
-      "text": "Had the car seats cleaned — they were covered in kids' stains. They look brand new! Fair price and excellent service."
+      "name": "Katarína Kondelová",
+      "location": "Google Review",
+      "text": "Excellent service and great communication :) Immediately after contacting them they came to pick up our rug and brought it beautifully cleaned after a couple of days. Very satisfied :)"
     },
     "client4": {
-      "name": "Miguel Santos",
-      "location": "Setúbal",
-      "text": "This is the second time I've called 7 Limp for sofas and mattresses. Impeccable and professional work. The best in the South Bank!"
+      "name": "Carmen Lourenco",
+      "location": "Google Review",
+      "text": "Excellent service! Always very friendly. This is the second time I've hired this company, first for sofa cleaning and now for mattress cleaning."
     }
   },
   "areas": {
