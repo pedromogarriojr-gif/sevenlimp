@@ -86,7 +86,7 @@ export default {
       boxShadow: {
         'premium': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 20px 25px -5px rgba(0, 0, 0, 0.05)',
         'premium-lg': '0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 25px 50px -12px rgba(0, 0, 0, 0.15)',
-        'glow': '0 0 20px rgba(30, 60, 160, 0.3)',
+        'glow': '0 0 20px rgba(200, 170, 0, 0.3)',
         'glow-lg': '0 0 40px rgba(245, 190, 0, 0.35)',
       },
       keyframes: {

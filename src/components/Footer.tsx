@@ -1,6 +1,7 @@
 import { Phone, MapPin, Facebook, Instagram, ArrowUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { socialLinks } from "@/config/social";
+import logo7limp from "@/assets/logo-7limp.png";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <span className="font-bold text-xl lg:text-2xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>AquaFix</span>
+              <img src={logo7limp} alt="7 Limp Cleaning" className="h-10 w-auto" />
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
               {t("footer.description")}

@@ -4,6 +4,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import logo7limp from "@/assets/logo-7limp.png";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -38,17 +39,8 @@ const Header = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo with tagline */}
-           <a href="#inicio" className="relative group flex items-baseline gap-1.5" aria-label="AquaFix - Canalizador Profissional">
-            <span className={`text-2xl lg:text-3xl font-bold tracking-tight transition-colors duration-300 ${
-              isScrolled ? "text-foreground" : "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
-            }`} style={{ fontFamily: "'Montserrat', sans-serif" }}>
-              AquaFix
-            </span>
-            <span className={`text-[10px] lg:text-xs font-medium tracking-wide transition-colors duration-300 ${
-              isScrolled ? "text-muted-foreground" : "text-white/70 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"
-            }`} style={{ fontFamily: "'Open Sans', sans-serif" }}>
-              Canalizador Profissional
-            </span>
+           <a href="#inicio" className="relative group flex items-center gap-2" aria-label="7 Limp Cleaning">
+            <img src={logo7limp} alt="7 Limp Cleaning" className="h-10 lg:h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

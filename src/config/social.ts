@@ -1,5 +1,5 @@
 export const socialLinks = {
-  facebook: "", // TODO: Adicionar URL do Facebook
-  instagram: "", // TODO: Adicionar URL do Instagram
+  facebook: "https://www.facebook.com/p/7-Limp-Cleaning-100091943987837/",
+  instagram: "https://www.instagram.com/sevenlimpmargemsul",
   linkedin: "",
 };
