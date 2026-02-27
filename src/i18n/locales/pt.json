@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "gallery": "Galeria",
+    "areas": "Localização",
+    "testimonials": "Testemunhos",
+    "contacts": "Contactos",
+    "requestQuote": "Pedir Orçamento"
+  },
+  "hero": {
+    "badge": "+500 clientes satisfeitos",
+    "title": "Serviços de Eletricidade",
+    "titleHighlight": "Profissional",
+    "description": "Instalações, reparações e manutenção elétrica. Serviço rápido, seguro e com garantia. Atendimento 24h para urgências.",
+    "benefit1": "Técnicos Certificados",
+    "benefit2": "Garantia nos Trabalhos",
+    "benefit3": "Atendimento 24h",
+    "callNow": "Ligar Agora",
+    "formBadge": "ORÇAMENTO GRATUITO",
+    "formTitle": "Peça o Seu Orçamento",
+    "formSubtitle": "Resposta em menos de 2 horas",
+    "formName": "Nome",
+    "formNamePlaceholder": "O seu nome completo",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "o.seu@email.com",
+    "formPhone": "Telefone",
+    "formPhonePlaceholder": "000 000 000",
+    "formService": "Descrição do Problema",
+    "formServicePlaceholder": "Descreva o problema ou serviço elétrico que precisa...",
+    "formConsent": "Aceito ser contactado para resposta ao meu pedido",
+    "formSubmit": "Pedir Orçamento Gratuito",
+    "formSubmitting": "A enviar...",
+    "formSuccess": "Pedido enviado com sucesso! Entraremos em contacto em breve.",
+    "formError": "Erro ao enviar o pedido. Tente novamente.",
+    "formRequired": "Por favor preencha todos os campos.",
+    "formConsentRequired": "Por favor aceite ser contactado.",
+    "formInvalidEmail": "Por favor insira um email válido."
+  },
+  "trustBadges": {
+    "certified": "Técnicos Certificados",
+    "certifiedDesc": "Formação especializada",
+    "experienced": "Experiência Comprovada",
+    "experiencedDesc": "+15 anos no mercado",
+    "rating": "Avaliação 5 Estrelas",
+    "ratingDesc": "+500 clientes satisfeitos",
+    "guarantee": "Garantia nos Trabalhos",
+    "guaranteeDesc": "Materiais de qualidade",
+    "fast": "Resposta Rápida",
+    "fastDesc": "Urgências em 1 hora"
+  },
+  "press": {
+    "seenIn": "Reconhecido por",
+    "nitArticle": "\"Serviço elétrico de confiança — adicione a sua referência aqui\""
+  },
+  "services": {
+    "sectionLabel": "Os nossos serviços",
+    "title": "Serviços de Eletricidade",
+    "description": "Oferecemos uma gama completa de serviços elétricos residenciais e comerciais, com técnicos experientes e materiais de primeira qualidade.",
+    "deepCleansing": "Reparação Elétrica",
+    "deepCleansingDesc": "Deteção e reparação de avarias elétricas em quadros, tomadas, interruptores e circuitos.",
+    "facialTreatments": "Iluminação",
+    "facialTreatmentsDesc": "Instalação de iluminação LED, candeeiros, focos embutidos e sistemas de iluminação decorativa.",
+    "hairRemoval": "Tomadas e Interruptores",
+    "hairRemovalDesc": "Instalação e substituição de tomadas, interruptores, disjuntores e aparelhagem elétrica.",
+    "massages": "Domótica",
+    "massagesDesc": "Instalação de sistemas de domótica, automação residencial e controlo inteligente de iluminação e equipamentos.",
+    "bodyTreatments": "Cablagem Elétrica",
+    "bodyTreatmentsDesc": "Instalação e substituição de cablagem elétrica, quadros e circuitos para novas construções ou remodelações.",
+    "manicurePedicure": "Instalações Elétricas WC",
+    "manicurePedicureDesc": "Instalações elétricas para casas de banho com proteção contra humidade e cumprimento das normas de segurança.",
+    "weightLoss": "Painéis Solares",
+    "weightLossDesc": "Instalação e manutenção de painéis solares fotovoltaicos para produção de energia renovável.",
+    "immunity": "Inspeção e Diagnóstico",
+    "immunityDesc": "Inspeção de instalações elétricas com equipamento de diagnóstico para deteção de problemas e riscos.",
+    "acneControl": "Eficiência Energética",
+    "acneControlDesc": "Soluções para reduzir o consumo de energia com equipamentos modernos e iluminação LED eficiente.",
+    "requestQuote": "Pedir Orçamento",
+    "newBadge": "Novo",
+    "learnMore": "Saber mais"
+  },
+  "whyChooseUs": {
+    "sectionLabel": "Porquê escolher-nos",
+    "title": "O Que Nos Distingue",
+    "description": "Destacamo-nos pela qualidade do trabalho e pelo compromisso com a segurança e satisfação de cada cliente.",
+    "fastResponse": "Resposta Rápida",
+    "fastResponseDesc": "Atendimento de urgências em menos de 1 hora. Disponíveis 24h por dia, 7 dias por semana.",
+    "transparent": "Preços Transparentes",
+    "transparentDesc": "Orçamento detalhado antes de iniciar qualquer trabalho, sem custos escondidos ou surpresas.",
+    "qualified": "Profissionais Qualificados",
+    "qualifiedDesc": "Eletricistas certificados com mais de 15 anos de experiência em instalações elétricas.",
+    "emergency": "Segurança Garantida",
+    "emergencyDesc": "Cumprimos todas as normas de segurança elétrica. Instalações certificadas e materiais homologados.",
+    "customerFocus": "Foco no Cliente",
+    "customerFocusDesc": "A sua satisfação é a nossa prioridade. Garantia em todos os trabalhos realizados."
+  },
+  "gallery": {
+    "sectionLabel": "Portfólio",
+    "title": "Os Nossos Trabalhos",
+    "description": "Veja alguns dos nossos trabalhos de eletricidade realizados com profissionalismo e qualidade.",
+    "deepCleansing": "Quadros",
+    "facialTreatments": "Iluminação",
+    "hairRemoval": "WC",
+    "massages": "Domótica",
+    "bodyTreatments": "Exterior",
+    "manicurePedicure": "Solar",
+    "deepCleansingAlt": "Reparação de quadro elétrico",
+    "facialTreatmentsAlt": "Instalação de iluminação LED",
+    "hairRemovalAlt": "Instalação elétrica em casa de banho",
+    "massagesAlt": "Sistema de domótica",
+    "bodyTreatmentsAlt": "Iluminação exterior",
+    "manicurePedicureAlt": "Instalação de painéis solares",
+    "closeLightbox": "Fechar"
+  },
+  "testimonials": {
+    "sectionLabel": "Testemunhos",
+    "title": "O Que Dizem os Nossos Clientes",
+    "description": "A opinião dos nossos clientes é o nosso maior orgulho e motivação.",
+    "reviews": "reviews",
+    "client1": {
+      "name": "Carlos Rodrigues",
+      "location": "Lisboa",
+      "text": "Tive um curto-circuito de madrugada e vieram em menos de 1 hora. Resolveram o problema rapidamente e deixaram tudo seguro. Excelente serviço!"
+    },
+    "client2": {
+      "name": "Ana Martins",
+      "location": "Setúbal",
+      "text": "Fizeram a instalação elétrica completa da casa nova. Trabalho impecável, dentro do prazo e do orçamento. Recomendo a 100%!"
+    },
+    "client3": {
+      "name": "Pedro Santos",
+      "location": "Almada",
+      "text": "Instalaram painéis solares no telhado e o sistema de domótica. Profissionais muito competentes e preço justo. Cinco estrelas!"
+    },
+    "client4": {
+      "name": "Maria Costa",
+      "location": "Palmela",
+      "text": "Avaria no quadro elétrico resolvida rapidamente com equipamento profissional. Muito simpáticos e eficientes. Já são os meus eletricistas de confiança!"
+    }
+  },
+  "areas": {
+    "sectionLabel": "Zona de atuação",
+    "title": "Onde Atuamos",
+    "description": "Prestamos serviços de eletricidade em toda a região. Deslocação incluída no orçamento.",
+    "notFound": "Não encontra a sua zona? Contacte-nos que verificamos!"
+  },
+  "finalCta": {
+    "badge": "Orçamento Gratuito",
+    "title": "Precisa de um",
+    "titleHighlight": "Eletricista?",
+    "description": "Peça já o seu orçamento gratuito e sem compromisso. Respondemos em menos de 2 horas.",
+    "requestQuote": "Pedir Orçamento Gratuito",
+    "noCommitment": "Sem compromisso",
+    "fastResponse": "Resposta em 2h",
+    "qualityGuarantee": "Garantia nos trabalhos"
+  },
+  "footer": {
+    "description": "Serviços profissionais de eletricidade. Instalações, reparações, iluminação e manutenção elétrica. Atendimento 24h para urgências.",
+    "quickLinks": "Links Rápidos",
+    "servicesTitle": "Serviços",
+    "contactsTitle": "Contactos",
+    "location": "A Sua Zona de Atuação",
+    "copyright": "© 2025 O Seu Negócio. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos e Condições"
+  },
+  "chat": {
+    "title": "Precisa de ajuda?",
+    "subtitle": "Estamos aqui para si",
+    "greeting": "Olá! 👋 Tem um problema elétrico? Contacte-nos para um orçamento gratuito ou assistência urgente.",
+    "whatsapp": "WhatsApp",
+    "whatsappDesc": "Resposta rápida",
+    "callNow": "Ligar Agora",
+    "hours": "Urgências: 24h | Normal: Seg-Sáb 8h-19h"
+  },
+  "faq": {
+    "sectionLabel": "Perguntas Frequentes",
+    "title": "Dúvidas? Nós Respondemos",
+    "description": "Reunimos as perguntas mais comuns dos nossos clientes para que possa esclarecer todas as suas dúvidas.",
+    "q1": "Fazem atendimento de urgências fora de horas?",
+    "a1": "Sim! Temos serviço de urgências disponível 24 horas por dia, 7 dias por semana. Em caso de curto-circuito, falha de energia ou situação de risco, respondemos em menos de 1 hora.",
+    "q2": "O orçamento é gratuito?",
+    "a2": "Sim! Fazemos orçamentos gratuitos e sem compromisso. Após avaliar o problema, apresentamos um orçamento detalhado antes de iniciar qualquer trabalho.",
+    "q3": "Quanto tempo demora uma reparação?",
+    "a3": "Depende do tipo de serviço. Reparações simples como avarias em tomadas ou interruptores resolvem-se normalmente em 1-2 horas. Trabalhos mais complexos como instalações elétricas completas podem levar alguns dias.",
+    "q4": "Que métodos de pagamento aceitam?",
+    "a4": "Aceitamos pagamento em dinheiro, Multibanco, MB Way e transferência bancária. Para trabalhos maiores, disponibilizamos opções de pagamento faseado.",
+    "q5": "Os trabalhos têm garantia?",
+    "a5": "Sim! Todos os nossos trabalhos têm garantia. Utilizamos materiais homologados e cumprimos todas as normas de segurança elétrica em vigor.",
+    "q6": "Trabalham em condomínios e empresas?",
+    "a6": "Sim! Prestamos serviços tanto para particulares como para condomínios, empresas e estabelecimentos comerciais. Temos contratos de manutenção disponíveis."
+  },
+  "common": {
+    "home": "Início",
+    "services": "Serviços",
+    "gallery": "Galeria",
+    "testimonials": "Testemunhos"
+  }
+}

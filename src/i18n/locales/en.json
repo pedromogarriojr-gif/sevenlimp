@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "areas": "Location",
+    "testimonials": "Testimonials",
+    "contacts": "Contacts",
+    "requestQuote": "Get a Quote"
+  },
+  "hero": {
+    "badge": "+500 satisfied clients",
+    "title": "Professional Electrical",
+    "titleHighlight": "Services",
+    "description": "Installations, repairs and electrical maintenance. Fast, safe service with warranty. 24h emergency response.",
+    "benefit1": "Certified Electricians",
+    "benefit2": "Work Guarantee",
+    "benefit3": "24h Emergency Service",
+    "callNow": "Call Now",
+    "formBadge": "FREE QUOTE",
+    "formTitle": "Get Your Free Quote",
+    "formSubtitle": "Response within 2 hours",
+    "formName": "Name",
+    "formNamePlaceholder": "Your full name",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "your@email.com",
+    "formPhone": "Phone",
+    "formPhonePlaceholder": "000 000 000",
+    "formService": "Problem Description",
+    "formServicePlaceholder": "Describe the electrical problem or service you need...",
+    "formConsent": "I agree to be contacted regarding my request",
+    "formSubmit": "Get Free Quote",
+    "formSubmitting": "Sending...",
+    "formSuccess": "Request sent successfully! We'll be in touch soon.",
+    "formError": "Error sending request. Please try again.",
+    "formRequired": "Please fill in all fields.",
+    "formConsentRequired": "Please accept to be contacted.",
+    "formInvalidEmail": "Please enter a valid email address."
+  },
+  "trustBadges": {
+    "certified": "Certified Electricians",
+    "certifiedDesc": "Specialized training",
+    "experienced": "Proven Experience",
+    "experiencedDesc": "+15 years in the market",
+    "rating": "5 Star Rating",
+    "ratingDesc": "+500 satisfied clients",
+    "guarantee": "Work Guarantee",
+    "guaranteeDesc": "Quality materials",
+    "fast": "Fast Response",
+    "fastDesc": "Emergencies within 1 hour"
+  },
+  "press": {
+    "seenIn": "Recognized by",
+    "nitArticle": "\"Trusted electrical service — add your reference here\""
+  },
+  "services": {
+    "sectionLabel": "Our services",
+    "title": "Electrical Services",
+    "description": "We offer a complete range of residential and commercial electrical services, with experienced electricians and top-quality materials.",
+    "deepCleansing": "Electrical Repairs",
+    "deepCleansingDesc": "Detection and repair of electrical faults in panels, outlets, switches and circuits.",
+    "facialTreatments": "Lighting Installation",
+    "facialTreatmentsDesc": "Installation of LED lighting, fixtures, recessed spotlights and decorative lighting systems.",
+    "hairRemoval": "Outlets & Switches",
+    "hairRemovalDesc": "Installation and replacement of outlets, switches, circuit breakers and electrical fittings.",
+    "massages": "Home Automation",
+    "massagesDesc": "Installation of home automation systems, smart lighting control and intelligent equipment management.",
+    "bodyTreatments": "Electrical Wiring",
+    "bodyTreatmentsDesc": "Installation and replacement of electrical wiring, panels and circuits for new builds or renovations.",
+    "manicurePedicure": "Bathroom Electrics",
+    "manicurePedicureDesc": "Electrical installations for bathrooms with moisture protection and compliance with safety standards.",
+    "weightLoss": "Solar Panels",
+    "weightLossDesc": "Installation and maintenance of photovoltaic solar panels for renewable energy production.",
+    "immunity": "Inspection & Diagnostics",
+    "immunityDesc": "Electrical installation inspection with diagnostic equipment for problem and risk detection.",
+    "acneControl": "Energy Efficiency",
+    "acneControlDesc": "Solutions to reduce energy consumption with modern equipment and efficient LED lighting.",
+    "requestQuote": "Get a Quote",
+    "newBadge": "New",
+    "learnMore": "Learn more"
+  },
+  "whyChooseUs": {
+    "sectionLabel": "Why choose us",
+    "title": "What Sets Us Apart",
+    "description": "We stand out for our quality work and commitment to safety and every client's satisfaction.",
+    "fastResponse": "Fast Response",
+    "fastResponseDesc": "Emergency service in under 1 hour. Available 24/7.",
+    "transparent": "Transparent Pricing",
+    "transparentDesc": "Detailed quote before starting any work, with no hidden costs.",
+    "qualified": "Qualified Professionals",
+    "qualifiedDesc": "Certified electricians with over 15 years of electrical installation experience.",
+    "emergency": "Safety Guaranteed",
+    "emergencyDesc": "We comply with all electrical safety standards. Certified installations and approved materials.",
+    "customerFocus": "Client Focus",
+    "customerFocusDesc": "Your satisfaction is our priority. Warranty on all work performed."
+  },
+  "gallery": {
+    "sectionLabel": "Portfolio",
+    "title": "Our Work",
+    "description": "See some of our electrical projects completed with professionalism and quality.",
+    "deepCleansing": "Panels",
+    "facialTreatments": "Lighting",
+    "hairRemoval": "Bathroom",
+    "massages": "Automation",
+    "bodyTreatments": "Outdoor",
+    "manicurePedicure": "Solar",
+    "deepCleansingAlt": "Professional electrical panel repair",
+    "facialTreatmentsAlt": "LED lighting installation",
+    "hairRemovalAlt": "Bathroom electrical installation",
+    "massagesAlt": "Home automation system",
+    "bodyTreatmentsAlt": "Outdoor lighting installation",
+    "manicurePedicureAlt": "Solar panel installation",
+    "closeLightbox": "Close"
+  },
+  "testimonials": {
+    "sectionLabel": "Testimonials",
+    "title": "What Our Clients Say",
+    "description": "Our clients' opinions are our greatest pride and motivation.",
+    "reviews": "reviews",
+    "client1": {
+      "name": "Carlos Rodrigues",
+      "location": "Lisbon",
+      "text": "Had a short circuit in the middle of the night and they came in under 1 hour. Fixed the problem quickly and made everything safe. Excellent service!"
+    },
+    "client2": {
+      "name": "Ana Martins",
+      "location": "Setúbal",
+      "text": "They did the complete electrical installation for our new home. Impeccable work, on time and on budget. 100% recommend!"
+    },
+    "client3": {
+      "name": "Pedro Santos",
+      "location": "Almada",
+      "text": "Installed solar panels on the roof and the home automation system. Very competent professionals and fair price. Five stars!"
+    },
+    "client4": {
+      "name": "Maria Costa",
+      "location": "Palmela",
+      "text": "Electrical panel fault resolved quickly with professional equipment. Very friendly and efficient. They're now my go-to electricians!"
+    }
+  },
+  "areas": {
+    "sectionLabel": "Service area",
+    "title": "Where We Operate",
+    "description": "We provide electrical services throughout the region. Travel included in the quote.",
+    "notFound": "Can't find your area? Contact us and we'll check!"
+  },
+  "finalCta": {
+    "badge": "Free Quote",
+    "title": "Need an",
+    "titleHighlight": "Electrician?",
+    "description": "Get your free, no-obligation quote now. We respond within 2 hours.",
+    "requestQuote": "Get Free Quote",
+    "noCommitment": "No commitment",
+    "fastResponse": "Response in 2h",
+    "qualityGuarantee": "Work guarantee"
+  },
+  "footer": {
+    "description": "Professional electrical services. Installations, repairs, lighting and electrical maintenance. 24h emergency service.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "contactsTitle": "Contacts",
+    "location": "Your Service Area",
+    "copyright": "© 2025 Your Business. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions"
+  },
+  "chat": {
+    "title": "Need help?",
+    "subtitle": "We're here for you",
+    "greeting": "Hello! 👋 Got an electrical problem? Contact us for a free quote or emergency assistance.",
+    "whatsapp": "WhatsApp",
+    "whatsappDesc": "Quick response",
+    "callNow": "Call Now",
+    "hours": "Emergencies: 24h | Regular: Mon-Sat 8am-7pm"
+  },
+  "faq": {
+    "sectionLabel": "Frequently Asked Questions",
+    "title": "Got Questions? We've Got Answers",
+    "description": "We've gathered the most common questions from our clients so you can clear up any doubts.",
+    "q1": "Do you provide after-hours emergency service?",
+    "a1": "Yes! We have 24/7 emergency service available. For short circuits, power failures or dangerous situations, we respond in under 1 hour.",
+    "q2": "Is the quote free?",
+    "a2": "Yes! We provide free, no-obligation quotes. After assessing the problem, we present a detailed quote before starting any work.",
+    "q3": "How long does a repair take?",
+    "a3": "It depends on the type of service. Simple repairs like faulty outlets or switches are usually resolved in 1-2 hours. More complex work like full electrical installations may take a few days.",
+    "q4": "What payment methods do you accept?",
+    "a4": "We accept cash, debit card, MB Way and bank transfer. For larger jobs, we offer staged payment options.",
+    "q5": "Is the work guaranteed?",
+    "a5": "Yes! All our work comes with a guarantee. We use approved materials and comply with all current electrical safety standards.",
+    "q6": "Do you work with condominiums and businesses?",
+    "a6": "Yes! We provide services for individuals, condominiums, businesses and commercial establishments. Maintenance contracts are available."
+  },
+  "common": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials"
+  }
+}
