@@ -7,9 +7,9 @@ const AreasSection = () => {
   const { t } = useTranslation();
 
   const areas = [
-    "Lisboa Centro", "Amadora", "Odivelas", "Loures",
-    "Sintra", "Cascais", "Oeiras", "Almada",
-    "Seixal", "Barreiro", "Montijo", "Setúbal",
+    "Almada", "Seixal", "Barreiro", "Montijo",
+    "Setúbal", "Sesimbra", "Palmela", "Moita",
+    "Costa da Caparica", "Corroios", "Amora", "Charneca da Caparica",
   ];
 
   return (
@@ -25,16 +25,13 @@ const AreasSection = () => {
           <span className="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-4">
             {t("areas.sectionLabel")}
           </span>
-          <h2 className="text-foreground mb-6">
-            {t("areas.title")}
-          </h2>
+          <h2 className="text-foreground mb-6">{t("areas.title")}</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
             {t("areas.description")}
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          {/* Map */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -43,19 +40,18 @@ const AreasSection = () => {
             className="w-full rounded-2xl overflow-hidden shadow-premium-lg border border-border"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d200000!2d-9.14!3d38.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d100000!2d-9.16!3d38.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Zona de atuação - Área de Lisboa"
+              title="Zona de atuação - Almada e Margem Sul"
               className="w-full"
             />
           </motion.div>
 
-          {/* Areas List */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}

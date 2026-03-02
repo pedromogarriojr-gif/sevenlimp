@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Clock, CreditCard, Wrench, Sparkles } from "lucide-react";
+import { Clock, CreditCard, Paintbrush, Shield } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const WhyChooseUs = () => {
@@ -8,8 +8,8 @@ const WhyChooseUs = () => {
   const reasons = [
     { icon: Clock, title: t("whyChooseUs.fastResponse"), description: t("whyChooseUs.fastResponseDesc"), gradient: "from-blue-500 to-cyan-500" },
     { icon: CreditCard, title: t("whyChooseUs.transparent"), description: t("whyChooseUs.transparentDesc"), gradient: "from-amber-400 to-orange-500" },
-    { icon: Wrench, title: t("whyChooseUs.qualified"), description: t("whyChooseUs.qualifiedDesc"), gradient: "from-slate-500 to-zinc-600" },
-    { icon: Sparkles, title: t("whyChooseUs.emergency"), description: t("whyChooseUs.emergencyDesc"), gradient: "from-teal-400 to-emerald-500" },
+    { icon: Paintbrush, title: t("whyChooseUs.qualified"), description: t("whyChooseUs.qualifiedDesc"), gradient: "from-slate-500 to-zinc-600" },
+    { icon: Shield, title: t("whyChooseUs.emergency"), description: t("whyChooseUs.emergencyDesc"), gradient: "from-teal-400 to-emerald-500" },
   ];
 
   return (

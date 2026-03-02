@@ -1,0 +1,6 @@
+
+ALTER TABLE public.contact_submissions
+  ADD COLUMN IF NOT EXISTS location TEXT,
+  ADD COLUMN IF NOT EXISTS paint_type TEXT,
+  ADD COLUMN IF NOT EXISTS area_sqm TEXT,
+  ADD COLUMN IF NOT EXISTS deadline TEXT;

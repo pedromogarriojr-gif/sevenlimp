@@ -14,13 +14,10 @@ const ServicesSection = () => {
   const { t } = useTranslation();
 
   const services = [
-    // Row 1: featured (2col) + regular
     { image: serviceCleansing, title: t("services.deepCleansing"), description: t("services.deepCleansingDesc"), size: "featured" as const },
     { image: serviceFacial, title: t("services.facialTreatments"), description: t("services.facialTreatmentsDesc"), size: "regular" as const },
-    // Row 2: regular + featured (2col)
     { image: serviceHairRemoval, title: t("services.hairRemoval"), description: t("services.hairRemovalDesc"), size: "regular" as const },
     { image: serviceMassage, title: t("services.massages"), description: t("services.massagesDesc"), size: "featured" as const },
-    // Row 3: 3 equal cards (new treatments)
     { image: serviceBody, title: t("services.bodyTreatments"), description: t("services.bodyTreatmentsDesc"), size: "regular" as const },
     { image: serviceManicure, title: t("services.manicurePedicure"), description: t("services.manicurePedicureDesc"), size: "regular" as const },
     { image: serviceWeightLoss, title: t("services.weightLoss"), description: t("services.weightLossDesc"), size: "regular" as const, highlight: true },
@@ -61,7 +58,6 @@ const ServicesSection = () => {
                   isFeatured ? "md:col-span-2 min-h-[320px]" : "min-h-[280px]"
                 } ${service.highlight ? "ring-1 ring-accent/20" : ""}`}
               >
-                {/* Full background image */}
                 <img
                   src={service.image}
                   alt={service.title}
@@ -69,14 +65,12 @@ const ServicesSection = () => {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
-                {/* Gradient overlay */}
                 <div className={`absolute inset-0 transition-opacity duration-300 ${
                   isFeatured
                     ? "bg-gradient-to-t from-primary/90 via-primary/40 to-primary/10 group-hover:from-primary/95"
                     : "bg-gradient-to-t from-primary/85 via-primary/50 to-primary/20 group-hover:from-primary/90"
                 }`} />
 
-                {/* Content */}
                 <div className="relative z-10 flex flex-col justify-end h-full p-6 lg:p-8">
                   {service.highlight && (
                     <span className="absolute top-4 right-4 bg-accent text-accent-foreground text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
@@ -97,7 +91,6 @@ const ServicesSection = () => {
                     )}
                   </div>
 
-                  {/* Hover CTA */}
                   <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
                     <span className="inline-flex items-center gap-1.5 text-accent text-sm font-semibold">
                       {t("services.learnMore")}
