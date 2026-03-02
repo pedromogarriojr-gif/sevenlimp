@@ -11,7 +11,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#inicio", label: t("nav.home") },
+    { href: "/", label: t("nav.home") },
     { href: "#servicos", label: t("nav.services") },
     { href: "#galeria", label: t("nav.gallery") },
     { href: "#testemunhos", label: t("nav.testimonials") },
@@ -37,7 +37,7 @@ const Header = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          <a href="#inicio" className="relative group flex items-center gap-2" aria-label="PintaJá">
+          <a href="/" className="relative group flex items-center gap-2" aria-label="PintaJá">
             <span className={`text-2xl lg:text-3xl font-extrabold tracking-tight transition-colors duration-200 ${isScrolled ? "text-foreground" : "text-white"}`} style={{ fontFamily: "'Montserrat', sans-serif" }}>
               Pinta<span className="text-accent">Já</span>
             </span>
