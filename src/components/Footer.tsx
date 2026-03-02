@@ -1,4 +1,5 @@
 import { Phone, MapPin, Facebook, Instagram, ArrowUp } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { socialLinks } from "@/config/social";
 
@@ -67,14 +68,16 @@ const Footer = () => {
             <h4 className="font-bold text-base lg:text-lg mb-5">{t("footer.servicesTitle")}</h4>
             <ul className="space-y-3">
               {[
-                t("services.deepCleansing"),
-                t("services.facialTreatments"),
-                t("services.hairRemoval"),
-                t("services.bodyTreatments"),
+                { label: t("services.deepCleansing"), slug: "pintura-interior" },
+                { label: t("services.facialTreatments"), slug: "pintura-exterior" },
+                { label: t("services.hairRemoval"), slug: "pintura-comercial" },
+                { label: t("services.bodyTreatments"), slug: "pintura-decorativa" },
               ].map((item, i) => (
-                <li key={i} className="text-white/70 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent/50" aria-hidden="true" />
-                  {item}
+                <li key={i}>
+                  <Link to={`/servicos/${item.slug}`} className="text-white/70 hover:text-accent transition-colors duration-200 flex items-center gap-2 group">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent/50 group-hover:bg-accent transition-colors" aria-hidden="true" />
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
