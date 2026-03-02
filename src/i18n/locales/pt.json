@@ -9,10 +9,10 @@
     "requestQuote": "Pedir Orçamento"
   },
   "hero": {
-    "badge": "Pintores Profissionais em Almada",
-    "title": "Orçamentos de Pintura em Almada",
+    "badge": "Pintores Profissionais no Montijo",
+    "title": "Orçamentos de Pintura no Montijo",
     "titleHighlight": "Rápido, Profissional e Grátis",
-    "description": "Pintura interior e exterior, residencial e comercial, com pintores certificados. Orçamento gratuito e sem compromisso.",
+    "description": "Pintura interior e exterior, residencial e comercial, com pintores certificados no Montijo e arredores. Orçamento gratuito e sem compromisso.",
     "benefit1": "Pintores Certificados",
     "benefit2": "Materiais de Qualidade",
     "benefit3": "Orçamento Grátis",
@@ -27,7 +27,7 @@
     "formPhone": "Telefone",
     "formPhonePlaceholder": "000 000 000",
     "formLocation": "Localização",
-    "formLocationPlaceholder": "Ex.: Almada, Seixal, Barreiro...",
+    "formLocationPlaceholder": "Ex.: Montijo, Alcochete, Moita...",
     "formPaintType": "Tipo de Pintura",
     "formPaintTypePlaceholder": "Selecione o tipo",
     "formPaintTypeInterior": "Interior",
@@ -63,12 +63,12 @@
   },
   "press": {
     "seenIn": "Áreas de Atuação",
-    "nitArticle": "\"Serviço de pintura de confiança em Almada e toda a Margem Sul\""
+    "nitArticle": "\"Serviço de pintura de confiança no Montijo e arredores\""
   },
   "services": {
     "sectionLabel": "Os nossos serviços",
-    "title": "Serviços de Pintura",
-    "description": "Oferecemos uma gama completa de serviços de pintura profissional para residências, comércios e indústria, com materiais de qualidade e acabamento impecável.",
+    "title": "Serviços de Pintura no Montijo",
+    "description": "Oferecemos uma gama completa de serviços de pintura profissional para residências, comércios e indústria no Montijo e arredores, com materiais de qualidade e acabamento impecável.",
     "deepCleansing": "Pintura Interior",
     "deepCleansingDesc": "Pintura de paredes, tetos, rodapés e acabamentos interiores. Preparação de superfícies e aplicação de tintas premium.",
     "facialTreatments": "Pintura Exterior",
@@ -90,7 +90,7 @@
   "whyChooseUs": {
     "sectionLabel": "Porquê escolher-nos",
     "title": "O Que Nos Distingue",
-    "description": "Destacamo-nos pela qualidade do trabalho, pontualidade e compromisso com a satisfação de cada cliente.",
+    "description": "Destacamo-nos pela qualidade do trabalho, pontualidade e compromisso com a satisfação de cada cliente no Montijo e arredores.",
     "fastResponse": "Orçamento Rápido",
     "fastResponseDesc": "Respondemos em menos de 24 horas com orçamento detalhado, sem compromisso e totalmente gratuito.",
     "transparent": "Preços Transparentes",
@@ -103,7 +103,7 @@
   "gallery": {
     "sectionLabel": "Portfólio",
     "title": "Os Nossos Trabalhos",
-    "description": "Veja alguns dos nossos trabalhos de pintura com resultados antes e depois impressionantes.",
+    "description": "Veja alguns dos nossos trabalhos de pintura no Montijo e arredores com resultados antes e depois impressionantes.",
     "deepCleansing": "Interior",
     "facialTreatments": "Sala",
     "hairRemoval": "Exterior",
@@ -143,13 +143,13 @@
   "areas": {
     "sectionLabel": "Zona de atuação",
     "title": "Onde Atuamos",
-    "description": "Prestamos serviços de pintura profissional em Almada e toda a Margem Sul. Deslocação incluída no orçamento.",
+    "description": "Prestamos serviços de pintura profissional no Montijo e arredores. Deslocação incluída no orçamento.",
     "notFound": "Não encontra a sua zona? Contacte-nos que verificamos!"
   },
   "finalCta": {
     "badge": "Orçamento Gratuito",
     "title": "Precisa de um",
-    "titleHighlight": "Serviço de Pintura Profissional?",
+    "titleHighlight": "Serviço de Pintura no Montijo?",
     "description": "Peça já o seu orçamento gratuito e sem compromisso. Respondemos em menos de 24 horas.",
     "requestQuote": "Pedir Orçamento Gratuito",
     "noCommitment": "Sem compromisso",
@@ -157,11 +157,11 @@
     "qualityGuarantee": "Qualidade garantida"
   },
   "footer": {
-    "description": "Pintura profissional de interiores e exteriores, residencial e comercial. Pintores certificados em Almada e Margem Sul.",
+    "description": "Pintura profissional de interiores e exteriores, residencial e comercial. Pintores certificados no Montijo e arredores.",
     "quickLinks": "Links Rápidos",
     "servicesTitle": "Serviços",
     "contactsTitle": "Contactos",
-    "location": "Almada e Margem Sul",
+    "location": "Montijo e Arredores",
     "copyright": "© 2025 PintaJá. Todos os direitos reservados.",
     "privacy": "Política de Privacidade",
     "terms": "Termos e Condições"
@@ -169,7 +169,7 @@
   "chat": {
     "title": "Precisa de pintura?",
     "subtitle": "Estamos aqui para ajudar",
-    "greeting": "Olá! 👋 Precisa de pintar a sua casa ou escritório? Contacte-nos para um orçamento gratuito!",
+    "greeting": "Olá! 👋 Precisa de pintar a sua casa ou escritório no Montijo? Contacte-nos para um orçamento gratuito!",
     "whatsapp": "WhatsApp",
     "whatsappDesc": "Resposta rápida",
     "callNow": "Ligar Agora",
@@ -178,19 +178,19 @@
   "faq": {
     "sectionLabel": "Perguntas Frequentes",
     "title": "Dúvidas? Nós Respondemos",
-    "description": "Reunimos as perguntas mais comuns dos nossos clientes para esclarecer todas as suas dúvidas sobre pintura.",
+    "description": "Reunimos as perguntas mais comuns dos nossos clientes sobre pintura no Montijo e arredores.",
     "q1": "Quanto tempo demora a pintar uma divisão?",
     "a1": "Depende do tamanho e estado das paredes. Em média, uma divisão standard demora 1 a 2 dias. Inclui preparação de superfícies, primário e duas demãos de tinta.",
     "q2": "O orçamento é gratuito?",
-    "a2": "Sim! Fazemos orçamentos gratuitos e sem compromisso. Basta contactar-nos com os detalhes do trabalho e respondemos rapidamente com o valor.",
+    "a2": "Sim! Fazemos orçamentos gratuitos e sem compromisso no Montijo e arredores. Basta contactar-nos com os detalhes do trabalho e respondemos rapidamente com o valor.",
     "q3": "Que tintas utilizam?",
     "a3": "Utilizamos tintas de marcas reconhecidas como Robbialac, CIN e Dyrup, garantindo durabilidade, bom acabamento e baixo odor.",
     "q4": "Preciso de sair de casa durante a pintura?",
     "a4": "Não necessariamente. Protegemos todos os móveis e pavimentos. Recomendamos boa ventilação durante e após a pintura para dissipar odores.",
     "q5": "Fazem pintura de exteriores e fachadas?",
     "a5": "Sim! Realizamos pintura exterior com tintas próprias para fachadas, resistentes às intempéries. Incluímos tratamento de fissuras e impermeabilização.",
-    "q6": "Atendem condomínios e empresas?",
-    "a6": "Sim! Prestamos serviços para particulares, condomínios, escritórios, lojas e espaços comerciais. Temos condições especiais para grandes áreas."
+    "q6": "Atendem condomínios e empresas no Montijo?",
+    "a6": "Sim! Prestamos serviços para particulares, condomínios, escritórios, lojas e espaços comerciais no Montijo, Alcochete, Moita e arredores. Temos condições especiais para grandes áreas."
   },
   "common": {
     "home": "Início",

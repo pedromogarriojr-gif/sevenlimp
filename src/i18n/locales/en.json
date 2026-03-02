@@ -9,10 +9,10 @@
     "requestQuote": "Get a Quote"
   },
   "hero": {
-    "badge": "Professional Painters in Almada",
-    "title": "Painting Quotes in Almada",
+    "badge": "Professional Painters in Montijo",
+    "title": "Painting Quotes in Montijo",
     "titleHighlight": "Fast, Professional & Free",
-    "description": "Interior and exterior painting, residential and commercial, with certified painters. Free quote with no commitment.",
+    "description": "Interior and exterior painting, residential and commercial, with certified painters in Montijo and surrounding areas. Free quote with no commitment.",
     "benefit1": "Certified Painters",
     "benefit2": "Quality Materials",
     "benefit3": "Free Quote",
@@ -27,7 +27,7 @@
     "formPhone": "Phone",
     "formPhonePlaceholder": "000 000 000",
     "formLocation": "Location",
-    "formLocationPlaceholder": "E.g.: Almada, Seixal, Barreiro...",
+    "formLocationPlaceholder": "E.g.: Montijo, Alcochete, Moita...",
     "formPaintType": "Type of Painting",
     "formPaintTypePlaceholder": "Select type",
     "formPaintTypeInterior": "Interior",
@@ -63,12 +63,12 @@
   },
   "press": {
     "seenIn": "Service Areas",
-    "nitArticle": "\"Trusted painting service in Almada and the South Bank area\""
+    "nitArticle": "\"Trusted painting service in Montijo and surrounding areas\""
   },
   "services": {
     "sectionLabel": "Our services",
-    "title": "Painting Services",
-    "description": "We offer a complete range of professional painting services for homes, businesses and industry, with quality materials and impeccable finish.",
+    "title": "Painting Services in Montijo",
+    "description": "We offer a complete range of professional painting services for homes, businesses and industry in Montijo and surrounding areas, with quality materials and impeccable finish.",
     "deepCleansing": "Interior Painting",
     "deepCleansingDesc": "Wall, ceiling, skirting board and interior finish painting. Surface preparation and premium paint application.",
     "facialTreatments": "Exterior Painting",
@@ -90,7 +90,7 @@
   "whyChooseUs": {
     "sectionLabel": "Why choose us",
     "title": "What Sets Us Apart",
-    "description": "We stand out for our quality work, punctuality and commitment to every client's satisfaction.",
+    "description": "We stand out for our quality work, punctuality and commitment to every client's satisfaction in Montijo and surrounding areas.",
     "fastResponse": "Quick Quote",
     "fastResponseDesc": "We respond within 24 hours with a detailed, no-obligation, completely free quote.",
     "transparent": "Transparent Pricing",
@@ -103,7 +103,7 @@
   "gallery": {
     "sectionLabel": "Portfolio",
     "title": "Our Work",
-    "description": "See some of our painting work with impressive before and after results.",
+    "description": "See some of our painting work in Montijo and surrounding areas with impressive before and after results.",
     "deepCleansing": "Interior",
     "facialTreatments": "Living Room",
     "hairRemoval": "Exterior",
@@ -143,13 +143,13 @@
   "areas": {
     "sectionLabel": "Service area",
     "title": "Where We Operate",
-    "description": "We provide professional painting services throughout Almada and the South Bank area. Travel included in the quote.",
+    "description": "We provide professional painting services in Montijo and surrounding areas. Travel included in the quote.",
     "notFound": "Can't find your area? Contact us and we'll check!"
   },
   "finalCta": {
     "badge": "Free Quote",
     "title": "Need a",
-    "titleHighlight": "Professional Painting Service?",
+    "titleHighlight": "Professional Painting Service in Montijo?",
     "description": "Get your free, no-obligation quote now. We respond within 24 hours.",
     "requestQuote": "Get Free Quote",
     "noCommitment": "No commitment",
@@ -157,11 +157,11 @@
     "qualityGuarantee": "Quality guaranteed"
   },
   "footer": {
-    "description": "Professional interior and exterior painting, residential and commercial. Certified painters in Almada and the South Bank.",
+    "description": "Professional interior and exterior painting, residential and commercial. Certified painters in Montijo and surrounding areas.",
     "quickLinks": "Quick Links",
     "servicesTitle": "Services",
     "contactsTitle": "Contacts",
-    "location": "Almada & South Bank",
+    "location": "Montijo & Surrounding Areas",
     "copyright": "© 2025 PintaJá. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms and Conditions"
@@ -169,7 +169,7 @@
   "chat": {
     "title": "Need painting?",
     "subtitle": "We're here to help",
-    "greeting": "Hello! 👋 Need to paint your home or office? Contact us for a free quote!",
+    "greeting": "Hello! 👋 Need to paint your home or office in Montijo? Contact us for a free quote!",
     "whatsapp": "WhatsApp",
     "whatsappDesc": "Quick response",
     "callNow": "Call Now",
@@ -178,19 +178,19 @@
   "faq": {
     "sectionLabel": "Frequently Asked Questions",
     "title": "Got Questions? We've Got Answers",
-    "description": "We've gathered the most common questions from our clients about our painting services.",
+    "description": "We've gathered the most common questions from our clients about our painting services in Montijo.",
     "q1": "How long does it take to paint a room?",
     "a1": "It depends on the size and condition of the walls. On average, a standard room takes 1-2 days, including surface preparation, primer and two coats of paint.",
     "q2": "Is the quote free?",
-    "a2": "Yes! We provide free, no-obligation quotes. Just contact us with the job details and we'll respond quickly with a price.",
+    "a2": "Yes! We provide free, no-obligation quotes in Montijo and surrounding areas. Just contact us with the job details and we'll respond quickly with a price.",
     "q3": "What paints do you use?",
     "a3": "We use paints from recognized brands like Robbialac, CIN and Dyrup, ensuring durability, good finish and low odour.",
     "q4": "Do I need to leave home during painting?",
     "a4": "Not necessarily. We protect all furniture and flooring. We recommend good ventilation during and after painting to dissipate odours.",
     "q5": "Do you do exterior and facade painting?",
     "a5": "Yes! We carry out exterior painting with facade-specific, weather-resistant paints. We include crack treatment and waterproofing.",
-    "q6": "Do you serve condominiums and businesses?",
-    "a6": "Yes! We provide services for individuals, condominiums, offices, shops and commercial spaces. We offer special rates for large areas."
+    "q6": "Do you serve condominiums and businesses in Montijo?",
+    "a6": "Yes! We provide services for individuals, condominiums, offices, shops and commercial spaces in Montijo, Alcochete, Moita and surrounding areas. We offer special rates for large areas."
   },
   "common": {
     "home": "Home",

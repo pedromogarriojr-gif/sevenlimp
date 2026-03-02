@@ -7,9 +7,9 @@ const AreasSection = () => {
   const { t } = useTranslation();
 
   const areas = [
-    "Almada", "Seixal", "Barreiro", "Montijo",
-    "Setúbal", "Sesimbra", "Palmela", "Moita",
-    "Costa da Caparica", "Corroios", "Amora", "Charneca da Caparica",
+    "Montijo", "Alcochete", "Moita", "Barreiro",
+    "Pinhal Novo", "Palmela", "Samouco", "Atalaia",
+    "Alto Estanqueiro", "Afonsoeiro", "Canha", "Santo Isidro de Pegões",
   ];
 
   return (
@@ -40,14 +40,14 @@ const AreasSection = () => {
             className="w-full rounded-2xl overflow-hidden shadow-premium-lg border border-border"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d100000!2d-9.16!3d38.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d80000!2d-8.97!3d38.71!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Zona de atuação - Almada e Margem Sul"
+              title="Zona de atuação - Montijo e Arredores"
               className="w-full"
             />
           </motion.div>
