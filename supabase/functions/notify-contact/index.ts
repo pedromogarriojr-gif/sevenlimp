@@ -1,6 +1,6 @@
 import { corsHeaders } from "../_shared/cors.ts";
 
-const RESEND_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 const NOTIFY_EMAIL = Deno.env.get("NOTIFY_EMAIL");
 
 Deno.serve(async (req) => {
@@ -52,13 +52,14 @@ Deno.serve(async (req) => {
       </div>
     `;
 
-    const res = await fetch("https://ai.gateway.lovable.dev/v1/email", {
+    const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${RESEND_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        from: "7Limp Website <onboarding@resend.dev>",
         to: [NOTIFY_EMAIL],
         subject: `Novo Contacto: ${name}`,
         html,
