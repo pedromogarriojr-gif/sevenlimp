@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle, Phone, Star, ArrowRight, Sparkles, Loader2 } from "lucide-react";
+import { CheckCircle, Phone, Star, ArrowRight, Paintbrush, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useTranslation } from "react-i18next";
@@ -13,6 +13,10 @@ const contactSchema = z.object({
   name: z.string().trim().min(1, "required").max(100),
   email: z.string().trim().email("invalidEmail").max(255),
   phone: z.string().trim().min(1, "required").max(20),
+  location: z.string().max(200).optional(),
+  paint_type: z.string().max(100).optional(),
+  area_sqm: z.string().max(50).optional(),
+  deadline: z.string().max(200).optional(),
   service: z.string().max(500).optional(),
   consent: z.literal(true, { errorMap: () => ({ message: "consentRequired" }) }),
 });
@@ -22,6 +26,10 @@ const HeroSection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [location, setLocation] = useState("");
+  const [paintType, setPaintType] = useState("");
+  const [areaSqm, setAreaSqm] = useState("");
+  const [deadline, setDeadline] = useState("");
   const [message, setMessage] = useState("");
   const [consent, setConsent] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -30,7 +38,15 @@ const HeroSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const result = contactSchema.safeParse({ name, email, phone, service: message || undefined, consent });
+    const result = contactSchema.safeParse({
+      name, email, phone,
+      location: location || undefined,
+      paint_type: paintType || undefined,
+      area_sqm: areaSqm || undefined,
+      deadline: deadline || undefined,
+      service: message || undefined,
+      consent,
+    });
     if (!result.success) {
       const firstError = result.error.issues[0];
       if (firstError.message === "invalidEmail") {
@@ -49,25 +65,20 @@ const HeroSection = () => {
         name: result.data.name,
         email: result.data.email,
         phone: result.data.phone,
+        location: result.data.location || null,
+        paint_type: result.data.paint_type || null,
+        area_sqm: result.data.area_sqm || null,
+        deadline: result.data.deadline || null,
         service: result.data.service || null,
         consent: result.data.consent,
       });
 
       if (error) throw error;
 
-      // TODO: Adicionar webhook URL para notificações externas
-      // fetch("https://your-webhook-url.com", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify({ name: result.data.name, email: result.data.email, phone: result.data.phone, service: result.data.service }),
-      // }).catch(() => {});
-
       toast.success(t("hero.formSuccess"));
-      setName("");
-      setEmail("");
-      setPhone("");
-      setMessage("");
-      setConsent(false);
+      setName(""); setEmail(""); setPhone(""); setLocation("");
+      setPaintType(""); setAreaSqm(""); setDeadline("");
+      setMessage(""); setConsent(false);
     } catch {
       toast.error(t("hero.formError"));
     } finally {
@@ -75,12 +86,10 @@ const HeroSection = () => {
     }
   };
 
+  const inputClass = "w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-200";
+
   return (
-    <section
-      id="inicio"
-      className="relative min-h-screen flex items-center py-12 pt-24 lg:py-8 lg:pt-20 scroll-mt-20"
-    >
-      {/* Background with shimmer */}
+    <section id="inicio" className="relative min-h-screen flex items-center py-12 pt-24 lg:py-8 lg:pt-20 scroll-mt-20">
       <div className="absolute inset-0">
         {!imgLoaded && (
           <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/60 animate-pulse" />
@@ -90,7 +99,7 @@ const HeroSection = () => {
           style={{ backgroundImage: `url(${heroBackground})` }}
         />
         <img src={heroBackground} alt="" className="hidden" onLoad={() => setImgLoaded(true)} />
-        <div className="absolute inset-0 bg-black/75" />
+        <div className="absolute inset-0 bg-black/70" />
         <div className="absolute top-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" aria-hidden="true" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl" aria-hidden="true" />
       </div>
@@ -115,9 +124,7 @@ const HeroSection = () => {
                   <Star key={i} className="w-4 h-4 fill-gold text-gold" aria-hidden="true" />
                 ))}
               </div>
-              <span className="text-white/90 text-sm font-medium">
-                {t("hero.badge")}
-              </span>
+              <span className="text-white/90 text-sm font-medium">{t("hero.badge")}</span>
             </motion.div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
@@ -131,7 +138,7 @@ const HeroSection = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               {[
-                { text: t("hero.benefit1"), icon: Sparkles },
+                { text: t("hero.benefit1"), icon: Paintbrush },
                 { text: t("hero.benefit2"), icon: CheckCircle },
                 { text: t("hero.benefit3"), icon: CheckCircle },
               ].map((item, i) => (
@@ -192,57 +199,53 @@ const HeroSection = () => {
                     {t("hero.formSubtitle")}
                   </p>
 
-                  <form onSubmit={handleSubmit} className="space-y-4" noValidate>
-                    <div className="space-y-1.5">
-                      <label htmlFor="hero-name" className="text-sm font-medium text-foreground">{t("hero.formName")}</label>
-                      <input
-                        id="hero-name"
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder={t("hero.formNamePlaceholder")}
-                        maxLength={100}
-                        autoComplete="name"
-                        className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-200"
-                      />
+                  <form onSubmit={handleSubmit} className="space-y-3" noValidate>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="space-y-1.5">
+                        <label htmlFor="hero-name" className="text-sm font-medium text-foreground">{t("hero.formName")} *</label>
+                        <input id="hero-name" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder={t("hero.formNamePlaceholder")} maxLength={100} autoComplete="name" className={inputClass} />
+                      </div>
+                      <div className="space-y-1.5">
+                        <label htmlFor="hero-phone" className="text-sm font-medium text-foreground">{t("hero.formPhone")} *</label>
+                        <input id="hero-phone" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t("hero.formPhonePlaceholder")} maxLength={20} autoComplete="tel" className={inputClass} />
+                      </div>
                     </div>
-                    <div className="space-y-1.5">
-                      <label htmlFor="hero-email" className="text-sm font-medium text-foreground">{t("hero.formEmail")}</label>
-                      <input
-                        id="hero-email"
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder={t("hero.formEmailPlaceholder")}
-                        maxLength={255}
-                        autoComplete="email"
-                        className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-200"
-                      />
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="space-y-1.5">
+                        <label htmlFor="hero-email" className="text-sm font-medium text-foreground">{t("hero.formEmail")} *</label>
+                        <input id="hero-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t("hero.formEmailPlaceholder")} maxLength={255} autoComplete="email" className={inputClass} />
+                      </div>
+                      <div className="space-y-1.5">
+                        <label htmlFor="hero-location" className="text-sm font-medium text-foreground">{t("hero.formLocation")}</label>
+                        <input id="hero-location" type="text" value={location} onChange={(e) => setLocation(e.target.value)} placeholder={t("hero.formLocationPlaceholder")} maxLength={200} className={inputClass} />
+                      </div>
                     </div>
-                    <div className="space-y-1.5">
-                      <label htmlFor="hero-phone" className="text-sm font-medium text-foreground">{t("hero.formPhone")}</label>
-                      <input
-                        id="hero-phone"
-                        type="tel"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        placeholder={t("hero.formPhonePlaceholder")}
-                        maxLength={20}
-                        autoComplete="tel"
-                        className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-200"
-                      />
+
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                      <div className="space-y-1.5">
+                        <label htmlFor="hero-paint-type" className="text-sm font-medium text-foreground">{t("hero.formPaintType")}</label>
+                        <select id="hero-paint-type" value={paintType} onChange={(e) => setPaintType(e.target.value)} className={inputClass}>
+                          <option value="">{t("hero.formPaintTypePlaceholder")}</option>
+                          <option value="interior">{t("hero.formPaintTypeInterior")}</option>
+                          <option value="exterior">{t("hero.formPaintTypeExterior")}</option>
+                          <option value="both">{t("hero.formPaintTypeBoth")}</option>
+                          <option value="industrial">{t("hero.formPaintTypeIndustrial")}</option>
+                        </select>
+                      </div>
+                      <div className="space-y-1.5">
+                        <label htmlFor="hero-area" className="text-sm font-medium text-foreground">{t("hero.formArea")}</label>
+                        <input id="hero-area" type="text" value={areaSqm} onChange={(e) => setAreaSqm(e.target.value)} placeholder={t("hero.formAreaPlaceholder")} maxLength={50} className={inputClass} />
+                      </div>
+                      <div className="space-y-1.5">
+                        <label htmlFor="hero-deadline" className="text-sm font-medium text-foreground">{t("hero.formDeadline")}</label>
+                        <input id="hero-deadline" type="text" value={deadline} onChange={(e) => setDeadline(e.target.value)} placeholder={t("hero.formDeadlinePlaceholder")} maxLength={200} className={inputClass} />
+                      </div>
                     </div>
+
                     <div className="space-y-1.5">
                       <label htmlFor="hero-service" className="text-sm font-medium text-foreground">{t("hero.formService")}</label>
-                      <textarea
-                        id="hero-service"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        placeholder={t("hero.formServicePlaceholder")}
-                        rows={2}
-                        maxLength={500}
-                        className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none transition-colors duration-200"
-                      />
+                      <textarea id="hero-service" value={message} onChange={(e) => setMessage(e.target.value)} placeholder={t("hero.formServicePlaceholder")} rows={2} maxLength={500} className={`${inputClass} resize-none`} />
                     </div>
 
                     <div className="flex items-start gap-2 p-3 bg-secondary/50 rounded-lg">
@@ -258,9 +261,7 @@ const HeroSection = () => {
                     </div>
 
                     <Button type="submit" variant="hero" size="lg" className="w-full shadow-glow" disabled={loading}>
-                      {loading ? (
-                        <Loader2 className="w-4 h-4 mr-2 animate-spin" aria-hidden="true" />
-                      ) : null}
+                      {loading && <Loader2 className="w-4 h-4 mr-2 animate-spin" aria-hidden="true" />}
                       {loading ? t("hero.formSubmitting") || t("hero.formSubmit") : t("hero.formSubmit")}
                       {!loading && <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />}
                     </Button>

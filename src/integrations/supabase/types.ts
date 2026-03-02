@@ -16,29 +16,41 @@ export type Database = {
     Tables: {
       contact_submissions: {
         Row: {
+          area_sqm: string | null
           consent: boolean
           created_at: string
+          deadline: string | null
           email: string
           id: string
+          location: string | null
           name: string
+          paint_type: string | null
           phone: string
           service: string | null
         }
         Insert: {
+          area_sqm?: string | null
           consent?: boolean
           created_at?: string
+          deadline?: string | null
           email: string
           id?: string
+          location?: string | null
           name: string
+          paint_type?: string | null
           phone: string
           service?: string | null
         }
         Update: {
+          area_sqm?: string | null
           consent?: boolean
           created_at?: string
+          deadline?: string | null
           email?: string
           id?: string
+          location?: string | null
           name?: string
+          paint_type?: string | null
           phone?: string
           service?: string | null
         }

@@ -4,7 +4,6 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
-import logo7limp from "@/assets/logo-7limp.png";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -38,13 +37,13 @@ const Header = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          {/* Logo with tagline */}
-           <a href="#inicio" className="relative group flex items-center gap-2" aria-label="7 Limp Cleaning">
-            <img src={logo7limp} alt="7 Limp Cleaning" className="h-10 lg:h-12 w-auto" />
+          <a href="#inicio" className="relative group flex items-center gap-2" aria-label="PintaJá">
+            <span className={`text-2xl lg:text-3xl font-extrabold tracking-tight transition-colors duration-200 ${isScrolled ? "text-foreground" : "text-white"}`} style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              Pinta<span className="text-accent">Já</span>
+            </span>
           </a>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1" aria-label={t("nav.mainNavigation") || "Main navigation"}>
+          <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -58,7 +57,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <LanguageSwitcher />
             <a href="#orcamento">
@@ -68,29 +66,21 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="flex lg:hidden items-center gap-2">
             <LanguageSwitcher />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`p-2.5 rounded-xl transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-                isScrolled
-                  ? "text-foreground bg-secondary"
-                  : "text-white bg-white/10"
+                isScrolled ? "text-foreground bg-secondary" : "text-white bg-white/10"
               }`}
-              aria-label={isMobileMenuOpen ? t("nav.closeMenu") || "Close menu" : t("nav.openMenu") || "Open menu"}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMobileMenuOpen}
             >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -118,23 +108,13 @@ const Header = () => {
                 </div>
                 <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-border">
                   <a href="tel:+351000000000" className="w-full">
-                    <Button
-                      variant="outline"
-                      size="lg"
-                      className="w-full gap-2"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
+                    <Button variant="outline" size="lg" className="w-full gap-2" onClick={() => setIsMobileMenuOpen(false)}>
                       <Phone className="w-4 h-4" aria-hidden="true" />
                       000 000 000
                     </Button>
                   </a>
                   <a href="#orcamento" className="w-full">
-                    <Button
-                      variant="hero"
-                      size="lg"
-                      className="w-full shadow-glow"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
+                    <Button variant="hero" size="lg" className="w-full shadow-glow" onClick={() => setIsMobileMenuOpen(false)}>
                       {t("nav.requestQuote")}
                     </Button>
                   </a>
