@@ -75,6 +75,20 @@ const HeroSection = () => {
 
       if (error) throw error;
 
+      // Fire-and-forget email notification
+      supabase.functions.invoke("notify-contact", {
+        body: {
+          name: result.data.name,
+          email: result.data.email,
+          phone: result.data.phone,
+          location: result.data.location || null,
+          paint_type: result.data.paint_type || null,
+          area_sqm: result.data.area_sqm || null,
+          deadline: result.data.deadline || null,
+          service: result.data.service || null,
+        },
+      }).catch((err) => console.error("Email notification failed:", err));
+
       toast.success(t("hero.formSuccess"));
       setName(""); setEmail(""); setPhone(""); setLocation("");
       setPaintType(""); setAreaSqm(""); setDeadline("");
