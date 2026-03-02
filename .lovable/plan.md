@@ -1,56 +1,38 @@
 
 
-# Template Generico de Site para Esteticista
+# Receber Submissões do Formulário por Email
 
-## Objetivo
-Transformar o site atual num template generico de negocio de estetica, removendo toda a marca "Sublime by Ines Goncalves" e substituindo por placeholders facilmente personalizaveis.
+## Situação Atual
+O formulário de contacto na homepage guarda os dados na base de dados (tabela `contact_submissions`), mas não envia nenhuma notificação por email.
 
-## O que vai mudar
+## Solução
+Criar uma função backend que envia um email para ti sempre que alguém preenche o formulário. A função será chamada automaticamente após cada submissão.
 
-### 1. Remover branding especifico
-- **Header**: Substituir "Sublime" e "by Ines Goncalves" por placeholders genericos (ex: "O Seu Negocio" / "Centro de Estetica")
-- **Footer**: Remover "Sublime by Ines Goncalves" do copyright e descricao
-- **FinalCTA**: Substituir "Sublime?" por texto generico
-- **Reviews page**: Substituir "Sublime" por placeholder
-- **index.html**: Atualizar titulo, meta description, og tags, author e canonical URL
+## Passos
 
-### 2. Remover dados pessoais
-- **Telefone**: Substituir 912 969 670 por placeholder (ex: "000 000 000")
-- **WhatsApp**: Atualizar link wa.me com numero generico
-- **Redes sociais** (`src/config/social.ts`): Limpar URLs do Facebook e Instagram
-- **Webhook Make.com**: Remover URL do webhook em HeroSection (deixar comentario TODO)
-- **Google Reviews**: Manter placeholder que ja existe
+### 1. Configurar o email de destino
+- Vou pedir-te o email onde queres receber as notificações dos formulários.
+- Este email será guardado como um segredo seguro no backend.
 
-### 3. Atualizar traducoes (pt.json e en.json)
-- Substituir todas as mencoes a "Sublime", "Ines Goncalves", "Setubal" por placeholders genericos
-- Testemunhos: Manter como exemplos mas com nomes genericos
-- Press section: Substituir artigo especifico por placeholder generico
-- Manter toda a estrutura e textos de servicos (sao genericos o suficiente)
+### 2. Criar função backend de envio de email
+- Criar uma função que recebe os dados do formulário e envia um email formatado com todas as informações (nome, email, telefone, localização, tipo de pintura, etc.).
+- Usará o serviço de email integrado do Lovable AI para enviar as notificações.
 
-### 4. Ficheiros a modificar
+### 3. Integrar com o formulário existente
+- Após guardar os dados na base de dados com sucesso, o formulário também chamará a nova função backend para disparar o email de notificação.
+- Se o email falhar, o utilizador ainda verá a mensagem de sucesso (os dados já estão guardados na base de dados).
 
-| Ficheiro | Alteracao |
-|----------|-----------|
-| `index.html` | Titulo, meta tags, canonical |
-| `src/config/social.ts` | Limpar URLs |
-| `src/components/Header.tsx` | Nome do negocio generico |
-| `src/components/HeroSection.tsx` | Remover webhook, telefone placeholder |
-| `src/components/FinalCTA.tsx` | Texto generico no CTA |
-| `src/components/FloatingChat.tsx` | Telefone/WhatsApp placeholder |
-| `src/components/Footer.tsx` | Copyright generico |
-| `src/pages/Reviews.tsx` | Logo generico |
-| `src/i18n/locales/pt.json` | Remover branding dos textos |
-| `src/i18n/locales/en.json` | Remover branding dos textos |
+---
 
-### 5. O que se mantem
-- Toda a estrutura e layout do site
-- Todos os componentes e seccoes
-- Todas as animacoes e estilos
-- Imagens de servicos e galeria (sao genericas)
-- Sistema de traducao PT/EN
-- Formulario de contacto (sem webhook)
-- Pagina de Reviews
-- Cores e tipografia (rose gold / premium aesthetic)
+### Detalhes Técnicos
 
-## Resultado
-Um template pronto a usar que pode ser facilmente personalizado para qualquer negocio de estetica, bastando alterar os placeholders nos ficheiros de traducao e configuracao.
+**Edge function `notify-contact`:**
+- Recebe os dados do formulário via POST
+- Formata um email HTML com todos os campos preenchidos
+- Envia usando Lovable AI (Resend integrado)
+- Retorna sucesso/erro
+
+**Alteração em `HeroSection.tsx`:**
+- Após o `insert` na base de dados, chama `supabase.functions.invoke('notify-contact', { body: formData })`
+- O envio do email é "fire-and-forget" para não bloquear a experiência do utilizador
+
