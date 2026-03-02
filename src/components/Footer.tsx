@@ -95,11 +95,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:geral@intaja.pt" className="flex items-center gap-3 text-white/70 hover:text-accent transition-colors duration-200 group cursor-pointer">
+                <a href="mailto:geral@pintaja.pt" className="flex items-center gap-3 text-white/70 hover:text-accent transition-colors duration-200 group cursor-pointer">
                   <div className="w-10 h-10 bg-accent/20 rounded-xl flex items-center justify-center group-hover:bg-accent/30 transition-colors duration-200 flex-shrink-0">
                     <Mail className="w-5 h-5 text-accent" aria-hidden="true" />
                   </div>
-                  <span className="font-medium">geral@intaja.pt</span>
+                  <span className="font-medium">geral@pintaja.pt</span>
                 </a>
               </li>
               <li>
