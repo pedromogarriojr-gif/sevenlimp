@@ -122,7 +122,7 @@ const TestimonialsSection = () => {
                 ))}
               </div>
               <span className="text-sm lg:text-base font-semibold text-foreground">4.9</span>
-              <span className="text-sm text-muted-foreground">(127 {t("testimonials.reviews")})</span>
+              <span className="text-sm text-muted-foreground">(27 {t("testimonials.reviews")})</span>
             </div>
           </div>
         </motion.div>
