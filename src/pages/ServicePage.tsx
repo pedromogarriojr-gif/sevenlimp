@@ -71,7 +71,7 @@ const ServicePage = () => {
       provider: {
         "@type": "LocalBusiness",
         name: "PintaJá",
-        telephone: "+351000000000",
+        telephone: "+351919199500",
         areaServed: areas.map((a) => ({ "@type": "City", name: a })),
         address: {
           "@type": "PostalAddress",
@@ -184,7 +184,7 @@ const ServicePage = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
-              <a href="tel:+351000000000">
+              <a href="tel:+351919199500">
                 <Button variant="heroOutline" size="xl" className="gap-3 w-full sm:w-auto">
                   <Phone className="w-5 h-5" />
                   Ligar Agora
@@ -333,9 +333,9 @@ const ServicePage = () => {
                         <ArrowRight className="w-4 h-4" />
                       </Button>
                     </Link>
-                    <a href="tel:+351000000000" className="mt-3 flex items-center justify-center gap-2 text-sm text-accent font-semibold hover:underline">
+                    <a href="tel:+351919199500" className="mt-3 flex items-center justify-center gap-2 text-sm text-accent font-semibold hover:underline">
                       <Phone className="w-4 h-4" />
-                      Ou ligue agora: 000 000 000
+                      Ou ligue agora: 919 199 500
                     </a>
                   </div>
 
@@ -431,7 +431,7 @@ const ServicePage = () => {
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
-                <a href="tel:+351000000000">
+                <a href="tel:+351919199500">
                   <Button variant="outline" size="lg" className="gap-2">
                     <Phone className="w-4 h-4" />
                     Ligar Agora
@@ -528,10 +528,10 @@ const ServicePage = () => {
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </Link>
-                <a href="tel:+351000000000">
+                <a href="tel:+351919199500">
                   <Button variant="heroOutline" size="xl" className="gap-3">
                     <Phone className="w-5 h-5" />
-                    000 000 000
+                    919 199 500
                   </Button>
                 </a>
               </div>

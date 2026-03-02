@@ -107,10 +107,10 @@ const Header = () => {
                   ))}
                 </div>
                 <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-border">
-                  <a href="tel:+351000000000" className="w-full">
+                  <a href="tel:+351919199500" className="w-full">
                     <Button variant="outline" size="lg" className="w-full gap-2" onClick={() => setIsMobileMenuOpen(false)}>
                       <Phone className="w-4 h-4" aria-hidden="true" />
-                      000 000 000
+                      919 199 500
                     </Button>
                   </a>
                   <a href="#orcamento" className="w-full">

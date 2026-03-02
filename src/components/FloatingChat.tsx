@@ -49,7 +49,7 @@ const FloatingChat = () => {
 
               <div className="space-y-3">
                 <a
-                  href="https://wa.me/351000000000"
+                  href="https://wa.me/351919199500"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 bg-trust-green text-trust-green-foreground rounded-2xl hover:bg-trust-green/90 transition-colors duration-200 cursor-pointer shadow-lg"
@@ -64,7 +64,7 @@ const FloatingChat = () => {
                 </a>
 
                 <a
-                  href="tel:+351000000000"
+                  href="tel:+351919199500"
                   className="flex items-center gap-4 p-4 bg-accent text-accent-foreground rounded-2xl hover:bg-accent/90 transition-colors duration-200 cursor-pointer shadow-lg"
                 >
                   <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -72,7 +72,7 @@ const FloatingChat = () => {
                   </div>
                   <div>
                     <span className="font-bold block">{t("chat.callNow")}</span>
-                    <span className="text-sm opacity-80">000 000 000</span>
+                    <span className="text-sm opacity-80">919 199 500</span>
                   </div>
                 </a>
               </div>
