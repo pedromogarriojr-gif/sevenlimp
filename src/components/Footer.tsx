@@ -1,4 +1,4 @@
-import { Phone, MapPin, Facebook, Instagram, ArrowUp } from "lucide-react";
+import { Phone, MapPin, Facebook, Instagram, ArrowUp, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { socialLinks } from "@/config/social";
@@ -87,11 +87,19 @@ const Footer = () => {
             <h4 className="font-bold text-base lg:text-lg mb-5">{t("footer.contactsTitle")}</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+351000000000" className="flex items-center gap-3 text-white/70 hover:text-accent transition-colors duration-200 group cursor-pointer">
+                <a href="tel:+351919199500" className="flex items-center gap-3 text-white/70 hover:text-accent transition-colors duration-200 group cursor-pointer">
                   <div className="w-10 h-10 bg-accent/20 rounded-xl flex items-center justify-center group-hover:bg-accent/30 transition-colors duration-200 flex-shrink-0">
                     <Phone className="w-5 h-5 text-accent" aria-hidden="true" />
                   </div>
-                  <span className="font-medium">000 000 000</span>
+                  <span className="font-medium">919 199 500</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:geral@intaja.pt" className="flex items-center gap-3 text-white/70 hover:text-accent transition-colors duration-200 group cursor-pointer">
+                  <div className="w-10 h-10 bg-accent/20 rounded-xl flex items-center justify-center group-hover:bg-accent/30 transition-colors duration-200 flex-shrink-0">
+                    <Mail className="w-5 h-5 text-accent" aria-hidden="true" />
+                  </div>
+                  <span className="font-medium">geral@intaja.pt</span>
                 </a>
               </li>
               <li>

@@ -47,7 +47,7 @@ Deno.serve(async (req) => {
         <div style="padding:24px;">
           <p style="color:#6b7280;margin:0 0 16px;">Recebeste um novo pedido de orçamento através do website.</p>
           <table style="width:100%;border-collapse:collapse;">${rows}</table>
-          <p style="color:#9ca3af;font-size:12px;margin:24px 0 0;text-align:center;">Email enviado automaticamente pelo website 7Limp.</p>
+          <p style="color:#9ca3af;font-size:12px;margin:24px 0 0;text-align:center;">Email enviado automaticamente pelo website PintaJá.</p>
         </div>
       </div>
     `;
@@ -59,7 +59,7 @@ Deno.serve(async (req) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "7Limp Website <onboarding@resend.dev>",
+        from: "PintaJá Website <onboarding@resend.dev>",
         to: [NOTIFY_EMAIL],
         subject: `Novo Contacto: ${name}`,
         html,

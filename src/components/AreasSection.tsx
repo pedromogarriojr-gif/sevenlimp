@@ -81,7 +81,7 @@ const AreasSection = () => {
                 </div>
                 <div>
                   <p className="text-foreground font-semibold mb-1">{t("areas.notFound")}</p>
-                  <a href="tel:+351000000000">
+                  <a href="tel:+351919199500">
                     <Button variant="accent" size="sm" className="mt-2">
                       {t("hero.callNow")}
                     </Button>

@@ -177,7 +177,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.7 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <a href="tel:+351000000000">
+              <a href="tel:+351919199500">
                 <Button variant="hero" size="xl" className="gap-3 w-full sm:w-auto shadow-glow">
                   <Phone className="w-5 h-5" aria-hidden="true" />
                   {t("hero.callNow")}
