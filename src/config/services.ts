@@ -1,8 +1,8 @@
-import serviceCleansing from "@/assets/service-cleansing.jpg";
-import serviceFacial from "@/assets/service-facial.jpg";
+import serviceInterior from "@/assets/service-interior.jpg";
+import serviceExterior from "@/assets/service-exterior.jpg";
 import serviceHairRemoval from "@/assets/service-hair-removal.jpg";
 import serviceMassage from "@/assets/service-massage.jpg";
-import serviceBody from "@/assets/service-body.jpg";
+import serviceDecorativa from "@/assets/service-decorativa.jpg";
 import serviceManicure from "@/assets/service-manicure.jpg";
 import serviceWeightLoss from "@/assets/service-weight-loss.jpg";
 
@@ -26,7 +26,7 @@ export interface ServiceData {
 export const services: ServiceData[] = [
   {
     slug: "pintura-interior",
-    image: serviceCleansing,
+    image: serviceInterior,
     titleKey: "services.deepCleansing",
     descKey: "services.deepCleansingDesc",
     longDescKey: "servicePage.interiorLong",
@@ -46,7 +46,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: "pintura-exterior",
-    image: serviceFacial,
+    image: serviceExterior,
     titleKey: "services.facialTreatments",
     descKey: "services.facialTreatmentsDesc",
     longDescKey: "servicePage.exteriorLong",
@@ -106,7 +106,7 @@ export const services: ServiceData[] = [
   },
   {
     slug: "pintura-decorativa",
-    image: serviceBody,
+    image: serviceDecorativa,
     titleKey: "services.bodyTreatments",
     descKey: "services.bodyTreatmentsDesc",
     longDescKey: "servicePage.decorativaLong",
