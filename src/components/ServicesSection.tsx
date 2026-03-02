@@ -2,26 +2,11 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
-import serviceCleansing from "@/assets/service-cleansing.jpg";
-import serviceFacial from "@/assets/service-facial.jpg";
-import serviceHairRemoval from "@/assets/service-hair-removal.jpg";
-import serviceMassage from "@/assets/service-massage.jpg";
-import serviceBody from "@/assets/service-body.jpg";
-import serviceManicure from "@/assets/service-manicure.jpg";
-import serviceWeightLoss from "@/assets/service-weight-loss.jpg";
+import { Link } from "react-router-dom";
+import { services } from "@/config/services";
 
 const ServicesSection = () => {
   const { t } = useTranslation();
-
-  const services = [
-    { image: serviceCleansing, title: t("services.deepCleansing"), description: t("services.deepCleansingDesc"), size: "featured" as const },
-    { image: serviceFacial, title: t("services.facialTreatments"), description: t("services.facialTreatmentsDesc"), size: "regular" as const },
-    { image: serviceHairRemoval, title: t("services.hairRemoval"), description: t("services.hairRemovalDesc"), size: "regular" as const },
-    { image: serviceMassage, title: t("services.massages"), description: t("services.massagesDesc"), size: "featured" as const },
-    { image: serviceBody, title: t("services.bodyTreatments"), description: t("services.bodyTreatmentsDesc"), size: "regular" as const },
-    { image: serviceManicure, title: t("services.manicurePedicure"), description: t("services.manicurePedicureDesc"), size: "regular" as const },
-    { image: serviceWeightLoss, title: t("services.weightLoss"), description: t("services.weightLossDesc"), size: "regular" as const, highlight: true },
-  ];
 
   return (
     <section id="servicos" className="section-padding bg-gradient-subtle scroll-mt-20">
@@ -47,58 +32,62 @@ const ServicesSection = () => {
             const isFeatured = service.size === "featured";
 
             return (
-              <motion.a
-                key={service.title}
-                href="#orcamento"
+              <motion.div
+                key={service.slug}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className={`group relative overflow-hidden rounded-2xl cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
-                  isFeatured ? "md:col-span-2 min-h-[320px]" : "min-h-[280px]"
-                } ${service.highlight ? "ring-1 ring-accent/20" : ""}`}
+                className={isFeatured ? "md:col-span-2" : ""}
               >
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <Link
+                  to={`/servicos/${service.slug}`}
+                  className={`group relative overflow-hidden rounded-2xl block focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
+                    isFeatured ? "min-h-[320px]" : "min-h-[280px]"
+                  } ${service.highlight ? "ring-1 ring-accent/20" : ""}`}
+                >
+                  <img
+                    src={service.image}
+                    alt={t(service.titleKey)}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
 
-                <div className={`absolute inset-0 transition-opacity duration-300 ${
-                  isFeatured
-                    ? "bg-gradient-to-t from-primary/90 via-primary/40 to-primary/10 group-hover:from-primary/95"
-                    : "bg-gradient-to-t from-primary/85 via-primary/50 to-primary/20 group-hover:from-primary/90"
-                }`} />
+                  <div className={`absolute inset-0 transition-opacity duration-300 ${
+                    isFeatured
+                      ? "bg-gradient-to-t from-primary/90 via-primary/40 to-primary/10 group-hover:from-primary/95"
+                      : "bg-gradient-to-t from-primary/85 via-primary/50 to-primary/20 group-hover:from-primary/90"
+                  }`} />
 
-                <div className="relative z-10 flex flex-col justify-end h-full p-6 lg:p-8">
-                  {service.highlight && (
-                    <span className="absolute top-4 right-4 bg-accent text-accent-foreground text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                      {t("services.newBadge")}
-                    </span>
-                  )}
-
-                  <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className={`font-bold text-primary-foreground mb-2 ${
-                      isFeatured ? "text-2xl lg:text-3xl" : "text-xl"
-                    }`}>
-                      {service.title}
-                    </h3>
-                    {isFeatured && (
-                      <p className="text-primary-foreground/80 leading-relaxed max-w-md text-sm lg:text-base">
-                        {service.description}
-                      </p>
+                  <div className="relative z-10 flex flex-col justify-end h-full p-6 lg:p-8">
+                    {service.highlight && (
+                      <span className="absolute top-4 right-4 bg-accent text-accent-foreground text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                        {t("services.newBadge")}
+                      </span>
                     )}
-                  </div>
 
-                  <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    <span className="inline-flex items-center gap-1.5 text-accent text-sm font-semibold">
-                      {t("services.learnMore")}
-                      <ArrowRight className="w-4 h-4" />
-                    </span>
+                    <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                      <h3 className={`font-bold text-primary-foreground mb-2 ${
+                        isFeatured ? "text-2xl lg:text-3xl" : "text-xl"
+                      }`}>
+                        {t(service.titleKey)}
+                      </h3>
+                      {isFeatured && (
+                        <p className="text-primary-foreground/80 leading-relaxed max-w-md text-sm lg:text-base">
+                          {t(service.descKey)}
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                      <span className="inline-flex items-center gap-1.5 text-accent text-sm font-semibold">
+                        {t("services.learnMore")}
+                        <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </motion.a>
+                </Link>
+              </motion.div>
             );
           })}
         </div>
